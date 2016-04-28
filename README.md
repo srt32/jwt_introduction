@@ -2,7 +2,7 @@
 
 ## Introduction
 
-### Use cases (borrowed from https://jwt.io/introduction/)
+### Use cases
 * Authentication: This is the most common scenario for using JWT. Once the user
 is logged in, each subsequent request will include the JWT, allowing the user
 to access routes, services, and resources that are permitted with that token.
@@ -15,13 +15,15 @@ public/private key pairs, you can be sure that the senders are who they say
 they are. Additionally, as the signature is calculated using the header and
 the payload, you can also verify that the content has not been tampered with.
 
+Source: https://jwt.io/introduction/
+
 
 ### Benefits
 
 * Compact (compated to XML usage in SAML)
 * easy to sign, easy to parse
 * Self-contained
-* Based on a standard (used by other APIs such as Box and Auth0): https://tools.ietf.org/html/rfc7519
+* Based on a standard (used by other APIs such as [Box](https://developers.box.com/) and [Auth0](https://auth0.com/docs)): https://tools.ietf.org/html/rfc7519
 
 
 ### Components
