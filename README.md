@@ -32,6 +32,24 @@ Source: https://jwt.io/introduction/
 * Signature: encoded header and payload signed with a secret (held by sender and receiver)
 * Secret
 
+Example header:
+
+```
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+
+Example payload:
+
+```
+{
+  "sub": "1234567890",
+  "user_id": "0a2054a3-55d1-48d6-b95b-be1042034146",
+}
+```
+
 final encoded token looks like `[encoded header].[encoded payload].[signature]`
 
 An example signed token:
@@ -47,7 +65,14 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMyZmEzMWY1LTBkYTAtNDE0Yi04NGNmLTd
 ### For usage in information exchange:
 #### Example: passing around the permissions of a user
 
-TODO - find image or example XXX
+```
+{
+  "sub": "1234567890",
+  "name": "John Doe Deer",
+  "admin": true,
+  "roles": ["buyer", "supplier"]
+}
+```
 
 ## Other Resources
 
