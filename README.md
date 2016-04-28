@@ -25,7 +25,7 @@ the payload, you can also verify that the content has not been tampered with.
 
 
 ### Components
-* Header: typ and and alg (required)
+* Header: `typ` and `alg` (required)
 * Payload: reserved claims (such as `iss`) and public claims (such as `user`)
 * Signature: encoded header and payload signed with a secret (held by sender and receiver)
 * Secret
@@ -45,9 +45,9 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMyZmEzMWY1LTBkYTAtNDE0Yi04NGNmLTd
 ### For usage in information exchange:
 #### Example: passing around the permissions of a user
 
-TODO - find image or example
+TODO - find image or example XXX
 
 ## Other Resources
 
-* Great resource for interactively generating and validating tokens [https://jwt.io/]
-* Example libraries: [https://www.npmjs.com/package/express-jwt], [https://github.com/jpadilla/pyjwt]
+* Great resource for interactively generating and validating tokens: https://jwt.io/
+* Example libraries: https://www.npmjs.com/package/express-jwt, https://github.com/jpadilla/pyjwt
